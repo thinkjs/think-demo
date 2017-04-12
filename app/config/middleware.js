@@ -6,7 +6,7 @@ const controller = require('think-controller');
 
 module.exports = [
   {
-    handle: trace, 
+    handle: trace,
     options: {
       debug: true
     }
@@ -14,11 +14,11 @@ module.exports = [
   {
     handle: meta,
     options: {
-      
+
     }
   },
   {
-    handle: router, 
+    handle: router,
     options: {
 
     }

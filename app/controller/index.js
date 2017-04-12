@@ -4,7 +4,10 @@ module.exports = class extends think.Controller {
   }
   async indexAction(){
     //this.ctx.body = 'test2';
-    this.display('index/index');
+    this.assign(this.i18n());
+
+
+    this.display('index_index');
     //throw new Error('haha')
   }
   __after(){
