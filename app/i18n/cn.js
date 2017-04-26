@@ -1,5 +1,4 @@
 module.exports = {
-  id: 'cn',
   localeId: 'cn',
   dateFormat: {
     months : '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
@@ -116,10 +115,21 @@ module.exports = {
     ]
   },
   translation: {
-    language: 'cn',
-    "plural_forms" : "nplurals=1; plural=(n != 1);",
-    data: {
+    "messages" : {
+      "" : {
+        "domain" : "messages",
+        "lang"   : "cn",
+        "plural_forms" : "nplurals=1; plural=(n != 1);",
+      },
       "some key" : [ "一些键"]
+    },
+    "setting" : {
+      "" : {
+        "domain" : "setting",
+        "lang"   : "cn",
+        "plural_forms" : "nplurals=1; plural=(n != 1);",
+      },
+      "some key" : [ "一些设置"]
     }
   }
 }

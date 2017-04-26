@@ -1,5 +1,4 @@
 module.exports = {
-  id: 'en',
   localeId: 'en',
   numeralFormat: {
     delimiters: {
@@ -27,10 +26,21 @@ module.exports = {
     ]
   },
   translation: {
-    language: 'en',
-    "plural_forms" : "nplurals=2; plural=(n != 1);",
-    data: {
+    "messages" : {
+      "" : {
+        "domain" : "messages",
+        "lang"   : "en",
+        "plural_forms" : "nplurals=2; plural=(n != 1);",
+      },
       "some key" : [ "some key"]
+    },
+    "setting" : {
+      "" : {
+        "domain" : "setting",
+        "lang"   : "en",
+        "plural_forms" : "nplurals=2; plural=(n != 1);",
+      },
+      "some key" : [ "some key in setting domain"]
     }
   }
 }

@@ -7,14 +7,16 @@ var regEn = /^en.*$/;
 module.exports = [
   view, //make application support view
   createI18n({
+    use: ['moment', 'numeral'],
     i18nFolder: path.resolve(__dirname, '../i18n'),
     defaultLocale: 'cn',
+    getLocale: {by: 'query', name: 'locale'},
     localesMapping(locales) {
       for(l of locales) {
-        if(l.match(regCn)) {
+        if(regCn.test(l)) {
           return 'cn';
         }
-        if(l.match(regEn)) {
+        if(regEn.test(l)) {
           return 'en';
         }
       }

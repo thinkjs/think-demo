@@ -1,5 +1,6 @@
-{{ jed.gettext('some key') }} 翻译
-{{ moment().format('llll') }} 时间
-{{ numeral.locale() }} 货币
-{{ numeral(1000).format('currency') }} 货币
+{{ jed.gettext('some key') }}
+{{ jed.dgettext('setting', 'some key') }}
+{{ moment().format('llll') }}
+{{ numeral.locale() }}
+{{ numeral(1000).format('currency') }}
 {{ numeral(1000).format('0,0[.]00 $') }}
