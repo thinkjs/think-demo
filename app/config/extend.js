@@ -7,7 +7,6 @@ var regEn = /^en.*$/;
 module.exports = [
   view, //make application support view
   createI18n({
-    use: ['moment', 'numeral'],
     i18nFolder: path.resolve(__dirname, '../i18n'),
     defaultLocale: 'cn',
     getLocale: {by: 'query', name: 'locale'},
